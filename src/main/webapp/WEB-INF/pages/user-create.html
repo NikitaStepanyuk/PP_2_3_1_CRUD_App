@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create user</title>
+</head>
+<body>
+
+</div>
+<p><a href="http://localhost:8080/PP_2_3_1_CRUD_App/">List users</a></p>
+</div>
+<form action="#" th:action="@{create}" th:object="${user}" method="post">
+    <label for="firstName">Name</label>
+    <input type="text" th:field="*{firstName}" id="firstName" placeholder="Name">
+    <label for="lastName">Last name</label>
+    <input type="text" th:field="*{lastName}" id="lastName" placeholder="Last Name">
+    <input type="submit" value="Create User">
+</form>
+
+</body>
+</html>
